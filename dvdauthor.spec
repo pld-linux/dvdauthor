@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 dvdauthor is a program that will generate a DVD movie from a valid
 MPEG-2 stream that should play when you put it in a DVD player.
 
-%description
+%description -l pl
 dvdauthor to program generuj±cy z poprawnych strumieni MPEG-2 filmy
 DVD, które powinny odtwarzaæ siê po w³o¿eniu do odtwarzacza DVD.
 
