@@ -1,4 +1,5 @@
-Summary:	dvdauthor is a program that will generate a DVD movie
+Summary:	dvdauthor - a program that will generate a DVD movie
+Summary(pl):	dvdauthor - program generuj±cy filmy DVD
 Name:		dvdauthor
 Version:	0.6.11
 Release:	0.1
@@ -15,7 +16,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 dvdauthor is a program that will generate a DVD movie from a valid
-mpeg2 stream that should play when you put it in a DVD player.
+MPEG-2 stream that should play when you put it in a DVD player.
+
+%description
+dvdauthor to program generuj±cy z poprawnych strumieni MPEG-2 filmy
+DVD, które powinny odtwarzaæ siê po w³o¿eniu do odtwarzacza DVD.
 
 %prep
 %setup -q
@@ -26,6 +31,7 @@ mpeg2 stream that should play when you put it in a DVD player.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
