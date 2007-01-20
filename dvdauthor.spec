@@ -1,12 +1,12 @@
 Summary:	dvdauthor - a program that will generate a DVD movie
 Summary(pl):	dvdauthor - program generuj±cy filmy DVD
 Name:		dvdauthor
-Version:	0.6.12
+Version:	0.6.13
 Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/dvdauthor/%{name}-%{version}.tar.gz
-# Source0-md5:	be29593967eb26aa3237bc772b6e1946
+# Source0-md5:	b6ad16b4cf283f5f36ebcb865eea78f1
 URL:		http://dvdauthor.sourceforge.net/
 BuildRequires:	freetype-devel
 BuildRequires:	libdvdread-devel
