@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/dvdauthor
-%{_mandir}/man1/*
+%{_mandir}/man1/*.1.*
