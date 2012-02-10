@@ -1,0 +1,19 @@
+--- dvdauthor-0.6.14/src/spuunmux.c.orig	2012-02-10 20:37:16.203921406 +0100
++++ dvdauthor-0.6.14/src/spuunmux.c	2012-02-10 20:37:51.200766465 +0100
+@@ -35,6 +35,7 @@
+ #include <netinet/in.h>
+ 
+ #include <png.h>
++#include <zlib.h>
+ 
+ #include "rgb.h"
+ 
+@@ -460,7 +461,7 @@
+ 	return -1;
+     }
+ 
+-    if (setjmp(png_ptr->jmpbuf)) {
++    if (setjmp(png_jmpbuf(png_ptr))) {
+ 	png_destroy_write_struct(&png_ptr, &info_ptr);
+ 	fclose(fp);
+ 	return -1;
